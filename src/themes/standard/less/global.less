@@ -1,0 +1,119 @@
+﻿@import "variables";
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-moz-viewport {
+    width: device-width;
+}
+
+@-webkit-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+html, body {
+    height: 100%; // for the sticky footer
+}
+
+body {
+    margin: 0;
+    overflow-y: scroll;
+    background: #fff;
+    font: 16px/1.5em "Segoe UI","Segoe WP Light","Segoe WP",Tahoma,Arial,sans-serif;
+    color: @text-color;
+}
+
+a {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    color: @link-color;
+    text-decoration: none;
+
+    &:hover {
+        color: @link-hover-color;
+    }
+}
+
+h1, h2, h3, h4 {
+    font-family: "Segoe UI Light","Segoe WP Light","Segoe UI","Segoe WP",Tahoma,Arial,sans-serif;
+    font-weight: 400;
+    margin: 25px 0;
+    line-height: 1.2;
+
+    a {
+        color: @text-color;
+
+        &:target {
+            outline: none;
+        }
+
+        &:hover {
+            color: @text-color;
+
+            &:after {
+                content: "§";
+                padding-left: 10px;
+                color: @link-color;
+                font-weight: bold;
+                font-size: 85%;
+            }
+        }
+    }
+    // Don't show the link on the front page
+    &:only-of-type a {
+        cursor: default;
+
+        &:after {
+            content: "";
+        }
+    }
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    min-height: 100%; // for the sticky footer
+    position: relative;
+}
+
+li {
+    padding: 1px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 @container-padding;
+}
+
+.download {
+    font-size: 16px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uaWNvbi13aGl0ZXtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggZD0iTTEgMTJjMCA2LjEgNC45IDExIDExIDExczExLTQuOSAxMS0xMVMxOC4xIDEgMTIgMSAxIDUuOSAxIDEyem0xLjUgMGMwLTUuMiA0LjMtOS41IDkuNS05LjVzOS41IDQuMyA5LjUgOS41LTQuMyA5LjUtOS41IDkuNS05LjUtNC4zLTkuNS05LjV6TTEzIDE2aC0zbDMtM0g2di0yaDdsLTMtM2gzbDQgNC00IDR6IiBjbGFzcz0iaWNvbi13aGl0ZSIvPjwvc3ZnPg==') /*/themes/standard/img/arrow.min.svg*/ no-repeat right center;
+    color: #fff;
+    padding-right: 30px;
+    display: inline-block;
+
+    &:hover {
+        color: #fff;
+    }
+}

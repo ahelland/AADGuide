@@ -1,0 +1,7 @@
+﻿# Content created by
+
+Andreas Helland
+www.mobilitydojo.net
+
+/* SPECIAL THANKS */
+The  VS Web tooling team for putting their site on GitHub so I didn't have to built a working site from scratch and wonder why things aren't optimized and/or working :)

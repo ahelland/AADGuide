@@ -1,0 +1,67 @@
+﻿@import "variables";
+
+main {
+    display: block;
+    min-height: 500px;
+    margin-right: @menu-width + 40px;
+    padding-bottom: @footer-height;
+    opacity: 1;
+    -moz-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+
+    article > p {
+        padding-bottom: 20px;
+        border-bottom: 1px solid @menu-background-color;
+    }
+
+    article img {
+        opacity: 0;
+        -moz-transition: opacity 2s ease;
+        -o-transition: opacity 2s ease;
+        -webkit-transition: opacity 2s ease;
+        transition: opacity 2s ease;
+    }
+
+    article ul {
+        list-style: none;
+        padding: 0 0 40px 0;
+
+        a {
+            padding-left: 25px;
+            background: no-repeat left;
+        }
+
+        a[href*="github.com"] {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6IzE4MTYxNjt9PC9zdHlsZT48cGF0aCBkPSJNOCAwQzMuNTggMCAwIDMuNyAwIDguMmMwIDMuNiAyLjMgNi43IDUuNSA3Ljc4LjQuMS41NS0uMTguNTUtLjQgMC0uMTggMC0uNyAwLTEuMzgtMi4yMy41LTIuNy0xLjEtMi43LTEuMS0uMzYtLjk1LS45LTEuMi0uOS0xLjItLjcyLS41LjA3LS41LjA3LS41LjguMSAxLjIuOCAxLjIuODUuNyAxLjMgMS45LjkgMi4zLjcuMDctLjUzLjI4LS45LjUtMS4xLTEuNzctLjItMy42My0uOS0zLjYzLTQuMDUgMC0uOS4zLTEuNjMuOC0yLjItLjA2LS4yLS4zLTEuMS4xLTIuMiAwIDAgLjY3LS4yMiAyLjIuODQuNjQtLjE0IDEuMy0uMjQgMi0uMjcuNjguMDMgMS40LjEzIDIgLjIzIDEuNTMtMS4wNiAyLjItLjg0IDIuMi0uODQuNDQgMS4xLjIgMiAuMSAyLjE3LjUuNi44IDEuMy44IDIuMiAwIDMuMTUtMS44NyAzLjg0LTMuNjUgNC4wNS4zLjMuNS44LjUgMS41MiAwIDEuMSAwIDEuOTggMCAyLjI1IDAgLjIuMS41LjYuNEMxMy43IDE0LjkgMTYgMTEuOCAxNiA4LjIgMTYgMy43IDEyLjQgMCA4IDB6IiBjbGFzcz0ic3QwIi8+PC9zdmc+') /*/themes/standard/img/github.min.svg*/;
+        }      
+    }
+
+    aside {
+        overflow: hidden;
+
+        h2 {
+            padding-top: @container-padding;
+            border-top: 1px solid @menu-background-color;
+        }
+
+        section {
+            float: left;
+            margin-right: 50px;
+
+            h3 {
+                margin: 0;
+            }
+
+            ul {
+                padding: 0;
+            }
+
+            a {
+                padding: 0;
+                background: none !important;
+            }
+        }
+    }
+}
