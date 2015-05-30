@@ -21,7 +21,7 @@ There's both an ITPro and a developer side to AAD, and I'll try to dive into the
 
 Disclaimer: This is not an official Microsoft guide, and while the goal is to be as accurate as possible it is not authoritative. Azure is constantly developed, and if things don't work as described here Microsoft has probably changed something on their end :)
 
-The official docs aren't bad, though you might have to visit several sources to find what you need (blogs, TechNet, MSDN), so this is meant more as a supplement than a replacement from the perspective of someone actually using and implementing it in the world outside Microsoft HQ.
+The official docs aren't bad, though you might have to visit several sources to find what you need (blogs, TechNet, MSDN), so this is meant more as a supplement than a replacement from the perspective of someone actually using and implementing it in the world outside Microsoft HQ. The flip side is that if the official doc is as good as it gets, and I don't bring any value adding to the table by repeating it, I might just link you to the official pages instead.
 
 ### What is Azure Active Directory (AAD)
 

@@ -1,7 +1,8 @@
 ﻿<properties
-	pageTitle="AADConnect"
+	pageTitle="AAD Connect"
 	description="AAD Connect is the vehicle for flowing directory data between the on-prem world and the cloud."
 	slug="aadconnect"
+    order="200"
 	keywords="dirsync, aad connect, aad"
 />
 
