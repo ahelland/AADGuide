@@ -1,7 +1,7 @@
 ﻿<properties
 	pageTitle="Azure AD Join"
 	description="Joining your Windows 10 computer to an Azure Active Directory Domain."
-	slug="addjoin"
+	slug="aadjoin"
     order="300"
 	keywords="Azure AD, AAD, AAD Join, Windows 10"
 />
