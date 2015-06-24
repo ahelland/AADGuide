@@ -1,0 +1,28 @@
+﻿@using System.ServiceModel.Syndication; 
+@{
+    Layout = null;
+
+    var feedTitle = "Azure Active Directory Guide - New Articles";
+    var feedDescription = "Guide to Azure Active Directory";
+    var feedUrl = "http://aadguide.azurewebsites.net";
+    var feedCopyright = "Andreas Helland";
+
+    var feedItems = FeedList.GetFeedItems();
+
+    var feed = new SyndicationFeed(feedTitle, feedDescription, new Uri(feedUrl), feedItems)
+    {
+        Copyright = TextSyndicationContent.CreatePlaintextContent(feedCopyright),
+        Language = "en-US"
+    };
+
+    var response = Context.Response;
+    response.ContentType = "application/rss+xml";
+
+    var content = new Rss20FeedFormatter(feed);
+
+    using (var xmlWriter = new System.Xml.XmlTextWriter(response.Output))
+    {
+        xmlWriter.Formatting = System.Xml.Formatting.Indented;
+        content.WriteTo(xmlWriter);
+    }
+}
