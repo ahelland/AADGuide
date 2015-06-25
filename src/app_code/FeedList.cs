@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ServiceModel.Syndication;
 
 /// <summary>
@@ -25,8 +26,16 @@ public class FeedList
         //link01.MediaType = "text/html";
         //feedItem01.Links.Add(link01);
 
+        var feedItem01 = new SyndicationItem
+        {
+            Title = SyndicationContent.CreatePlaintextContent("GraphTreeView (Windows Forms)"),
+            PublishDate = new DateTime(2015, 06, 25),
+            Content = SyndicationContent.CreateHtmlContent("How to build a Windows Forms app for retrieving groups and users from Azure AD, and build a treeview to present the results in a hierarchical view. ... <a href='http://aadguide.azurewebsites.net/integration/graphtreeview/'>http://aadguide.azurewebsites.net/integration/graphtreeview/</a>")
+        };
+
+
         List<SyndicationItem> feedItems = new List<SyndicationItem>();
-        //feedItems.Add(feedItem01);
+        feedItems.Add(feedItem01);
 
         return feedItems;
     }
