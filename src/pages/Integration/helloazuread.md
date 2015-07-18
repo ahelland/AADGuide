@@ -1,8 +1,8 @@
 ﻿<properties
-	pageTitle="HelloAzureAD (Universal App)"
+	pageTitle="HelloAzureAD"
 	description="How to build a Windows Universal app authenticating a client through Azure AD."
 	slug="helloazuread"
-    order="400"
+    order="500"
 	keywords="Azure AD, AAD, Integration, Identity, Web App, AAD App Registration"
 />
 

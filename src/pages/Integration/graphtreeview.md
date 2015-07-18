@@ -1,8 +1,8 @@
 ﻿<properties
-	pageTitle="GraphTreeView (Windows Forms)"
+	pageTitle="GraphTreeView"
 	description="How to build a Windows Forms app for retrieving groups and users from Azure AD, and build a treeview to present the results in a hierarchical view."
 	slug="graphtreeview"
-    order="500"
+    order="600"
 	keywords="Azure AD, AAD, Integration, Identity, Windows Forms App, AAD App Registration"
 />
 
