@@ -25,3 +25,14 @@ Client id and secret is used to authenticate as a trusted client. (Intended for 
 
 GitHub:
 [https://github.com/ahelland/AADGuide-CodeSamples/tree/master/GraphTreeView](https://github.com/ahelland/AADGuide-CodeSamples/tree/master/GraphTreeView)
+
+**WebAPISingleTenant**
+
+This guide consists of a server side web app and a client side Windows Universal app. Azure AD authentication is added to both the Web API endpoint and the Web App itself.
+
+The point of the exercise is to combine the templates for MVC-based apps using Azure AD for authentication with the Web API equivalent. In addition it makes for a more complete sample as the client part is also demonstrated.
+
+Code on GitHub:
+[https://github.com/ahelland/AADGuide-CodeSamples](https://github.com/ahelland/AADGuide-CodeSamples)
+
+Project name: WebAPIServerSingleTenant and WebAPIClientSingleTenant
