@@ -64,12 +64,12 @@ As an additional step you also need to set an extra permission in the Azure Port
 
 This is a single tenant app, and will only work with your specific Azure AD tenant. This is a design choice to simplify things.
 
-Start by setting the correct values for _tenant_ and _clientId_:
+Start by setting the correct values for _tenant_ and _clientId_ (in MainPage.xaml.xs):
 ```cs
 public sealed partial class MainPage : Page
 {
     const string aadInstance = "https://login.microsoftonline.com/";
-    const string ResourceId = "https://management.core.windows.net/";
+    const string ResourceId = "https://graph.windows.net/";
     const string tenant = "contoso.onmicrosoft.com";
     const string clientId = "copy-from-Azure-Portal";
     private static AuthenticationContext authContext = null;
@@ -96,7 +96,9 @@ try
 }
 ```
 
-This is what the user will see (the popup will overlay the app to give the feeling it's an integrated part of your app):
+This is what the user will see: 
+
+(Note - in preview builds the popup will overlay the app to give the feeling it's an integrated part of your app, but this has changed to a regular popup in RTM)
 
 ![HelloAzureAD Login page](_assets/HelloAzureAD_05.PNG)
 
@@ -115,8 +117,8 @@ This is in turn used when deserializing what the Graph API returns:
 ```cs
 private static async Task<AADUser> GetUserInfo(string tenantId, string userId, string token)
 {
-    //Version 1.5 would be the newest version, but it throws 401s so using older version in meantime
-    string graphRequest = $"https://graph.windows.net/{tenantId}/users/{userId}?api-version=2013-11-08";
+    //Fixed 401 from previous build - newer Graph API in use now
+    string graphRequest = $"https://graph.windows.net/{tenantId}/users/{userId}?api-version=1.6";
     HttpClient client = new HttpClient();
 
     client.DefaultRequestHeaders.Authorization = new Windows.Web.Http.Headers.HttpCredentialsHeaderValue("Bearer", token);
