@@ -26,6 +26,13 @@ public class FeedList
         //link01.MediaType = "text/html";
         //feedItem01.Links.Add(link01);
 
+        var feedItem02 = new SyndicationItem
+        {
+            Title = SyndicationContent.CreatePlaintextContent("WebAPISingleTenant"),
+            PublishDate = new DateTime(2015, 08, 03),
+            Content = SyndicationContent.CreateHtmlContent("How to protect a web api with Azure AD, and combine it with authentication for the API help page. ... <a href='http://aadguide.azurewebsites.net/integration/webapisingletenant/'>http://aadguide.azurewebsites.net/integration/webapisingletenant/</a>")
+        };
+
         var feedItem01 = new SyndicationItem
         {
             Title = SyndicationContent.CreatePlaintextContent("GraphTreeView (Windows Forms)"),
@@ -36,6 +43,7 @@ public class FeedList
 
         List<SyndicationItem> feedItems = new List<SyndicationItem>();
         feedItems.Add(feedItem01);
+        feedItems.Add(feedItem02);
 
         return feedItems;
     }
