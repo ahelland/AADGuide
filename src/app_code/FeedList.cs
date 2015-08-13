@@ -26,6 +26,13 @@ public class FeedList
         //link01.MediaType = "text/html";
         //feedItem01.Links.Add(link01);
 
+        var feedItem03 = new SyndicationItem
+        {
+            Title = SyndicationContent.CreatePlaintextContent("RegisterAppv2"),
+            PublishDate = new DateTime(2015, 08, 13),
+            Content = SyndicationContent.CreateHtmlContent("How to register an app with the v2 model in Azure AD. ... <a href='http://aadguide.azurewebsites.net/integration/registerappv2/'>http://aadguide.azurewebsites.net/integration/registerappv2/</a>")
+        };
+
         var feedItem02 = new SyndicationItem
         {
             Title = SyndicationContent.CreatePlaintextContent("WebAPISingleTenant"),
@@ -44,6 +51,7 @@ public class FeedList
         List<SyndicationItem> feedItems = new List<SyndicationItem>();
         feedItems.Add(feedItem01);
         feedItems.Add(feedItem02);
+        feedItems.Add(feedItem03);
 
         return feedItems;
     }
