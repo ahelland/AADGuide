@@ -190,7 +190,8 @@
                 var image = images[i];
 
                 var rect = image.getBoundingClientRect();
-                image.style.opacity = rect.top >= -50 && rect.bottom <= height ? 1 : 0;
+                //Always set to 1 giving the effect of fade-in, but not fade-out
+                image.style.opacity = rect.top >= -50 && rect.bottom <= height ? 1 : 1;
 
                 if (rect.bottom > height)
                     break;
