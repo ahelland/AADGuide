@@ -26,6 +26,13 @@ public class FeedList
         //link01.MediaType = "text/html";
         //feedItem01.Links.Add(link01);
 
+        var feedItem04 = new SyndicationItem
+        {
+            Title = SyndicationContent.CreatePlaintextContent("AAD B2C"),
+            PublishDate = new DateTime(2015, 10, 27),
+            Content = SyndicationContent.CreateHtmlContent("A guide for Azure AD B2C. ... <a href='http://aadguide.azurewebsites.net/aadb2c/aadb2cintro/'>http://aadguide.azurewebsites.net/aadb2c/aadb2cintro/</a>")
+        };
+
         var feedItem03 = new SyndicationItem
         {
             Title = SyndicationContent.CreatePlaintextContent("RegisterAppv2"),
@@ -52,6 +59,7 @@ public class FeedList
         feedItems.Add(feedItem01);
         feedItems.Add(feedItem02);
         feedItems.Add(feedItem03);
+        feedItems.Add(feedItem04);
 
         return feedItems;
     }
