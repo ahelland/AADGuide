@@ -8,7 +8,7 @@
 
 ## Setting up Google for use as an Identity Provider (IdP)
 
-Once you have a B2C tenant created you will need to have Identity Providers (IdP) configured before you're able to create necessary policies for signing up and in. As the name suggests these are the entities that will provide identiies, like AD/AAD itself would be a in a non-B2C setup. The list of providers is limited at the moment, and you can't add Microsoft's own consumer identities yet (but this will come later on). 
+Once you have a B2C tenant created you will need to have Identity Providers (IdP) configured before you're able to create necessary policies for signing up and in. As the name suggests these are the entities that will provide identiies, like AD/AAD itself would be a in a non-B2C setup. The list of providers is limited at the moment, but will be added to in the future. 
 
 This part of the guide covers how to use Google as your IdP. 
 
