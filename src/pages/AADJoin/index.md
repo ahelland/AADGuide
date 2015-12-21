@@ -8,7 +8,7 @@
 
 I stated on the introductory page that Azure AD was different from Active Directory on-premises in a couple of ways. One of the most notable pieces missing is that while you can have user accounts in Azure AD you cannot have computer accounts, and join computers to the domain. Well, that is due to change with Windows 10 with a feature called "Azure AD Join".
 
-**Note: This walkthrough is based on Windows 10 build 10030. The feature has changed throughout the preview builds, and things might look different up until RTM.**
+**Note: This walkthrough is up to date as of Windows 10 build 11082. If you are running a different build things might look slightly different, but the basics have been consistent since pre-RTM.**
 
 So, what is this? Well, if you've installed Windows 8 or 8.1 you'll no doubt have witnessed how you're supposed to use your Microsoft Account for signing in instead of using a local account. There are pros and cons to this approach, and some might prefer using local accounts instead. If you're using your Windows in a work environment both those options are often uninteresting and you'll want to join an Active Directory domain and use domain accounts instead, and that approach still works in Windows 10.
 
