@@ -26,6 +26,13 @@ public class FeedList
         //link01.MediaType = "text/html";
         //feedItem01.Links.Add(link01);
 
+        var feedItem06 = new SyndicationItem
+        {
+            Title = SyndicationContent.CreatePlaintextContent("ADSF 2016"),
+            PublishDate = new DateTime(2016, 01, 07),
+            Content = SyndicationContent.CreateHtmlContent("A guide for ADFS 2016. ... <a href='http://aadguide.azurewebsites.net/adfs2016/'>http://aadguide.azurewebsites.net/adfs2016/</a>")
+        };
+
         var feedItem05 = new SyndicationItem
         {
             Title = SyndicationContent.CreatePlaintextContent("AAD B2B"),
@@ -68,6 +75,7 @@ public class FeedList
         feedItems.Add(feedItem03);
         feedItems.Add(feedItem04);
         feedItems.Add(feedItem05);
+        feedItems.Add(feedItem06);
 
         return feedItems;
     }
