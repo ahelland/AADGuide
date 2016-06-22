@@ -4,7 +4,7 @@ Website: [aadguide.azurewebsites.net/](https://aadguide.azurewebsites.net/)
 
 ### Description
 
-This is a walkthrough/guide for Azure Active Directory and it's associated features both for ITPros and developers.
+This is a walkthrough/guide for Azure Active Directory and it's associated features both for ITPros and developers. 
 
 Disclaimer: This is not an official Microsoft guide, and while the goal is to be as accurate as possible it is not authoritative. Azure is constantly developed, and if things don't work as described here Microsoft has probably changed something on their end :)
 
