@@ -1,6 +1,6 @@
 ## Azure AD Guide
 
-Website: [aadguide.azurewebsites.net/](http://aadguide.azurewebsites.net/)
+Website: [aadguide.azurewebsites.net/](https://aadguide.azurewebsites.net/)
 
 ### Description
 
