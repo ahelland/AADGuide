@@ -1,4 +1,4 @@
-## Azure AD Guide 
+## Azure AD Guide
 
 Website: [aadguide.azurewebsites.net/](https://aadguide.azurewebsites.net/)
 
