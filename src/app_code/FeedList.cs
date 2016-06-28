@@ -26,6 +26,13 @@ public class FeedList
         //link01.MediaType = "text/html";
         //feedItem01.Links.Add(link01);
 
+        var feedItem08 = new SyndicationItem
+        {
+            Title = SyndicationContent.CreatePlaintextContent("JSON Web Tokens"),
+            PublishDate = new DateTime(2016, 06, 26),
+            Content = SyndicationContent.CreateHtmlContent("A guide for decoding JSON Web Tokens. ... <a href='http://aadguide.azurewebsites.net/integration/jwts/'>http://aadguide.azurewebsites.net/integration/jwts/</a>")
+        };
+
         var feedItem07 = new SyndicationItem
         {
             Title = SyndicationContent.CreatePlaintextContent("Claims"),
@@ -84,6 +91,7 @@ public class FeedList
         feedItems.Add(feedItem05);
         feedItems.Add(feedItem06);
         feedItems.Add(feedItem07);
+        feedItems.Add(feedItem08);
 
         return feedItems;
     }
