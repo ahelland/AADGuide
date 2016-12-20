@@ -26,6 +26,13 @@ public class FeedList
         //link01.MediaType = "text/html";
         //feedItem01.Links.Add(link01);
 
+        var feedItem09 = new SyndicationItem
+        {
+            Title = SyndicationContent.CreatePlaintextContent("OAuth Password Grant"),
+            PublishDate = new DateTime(2016, 12, 20),
+            Content = SyndicationContent.CreateHtmlContent("A guide for implementing the OAuth Password Grant. ... <a href='http://aadguide.azurewebsites.net/integration/aboutmesample/'>http://aadguide.azurewebsites.net/integration/aboutmesample/</a>")
+        };
+
         var feedItem08 = new SyndicationItem
         {
             Title = SyndicationContent.CreatePlaintextContent("JSON Web Tokens"),
@@ -92,6 +99,7 @@ public class FeedList
         feedItems.Add(feedItem06);
         feedItems.Add(feedItem07);
         feedItems.Add(feedItem08);
+        feedItems.Add(feedItem09);
 
         return feedItems;
     }
