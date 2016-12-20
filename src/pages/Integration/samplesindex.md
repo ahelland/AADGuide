@@ -2,7 +2,7 @@
 	pageTitle="Samples Index"
 	description="A description of the code samples in this section."
 	slug="samplesindex"
-    order="400"
+	order="400"
 	keywords="Azure AD, AAD, Integration, Identity, Web App, AAD App Registration"
 />
 
@@ -14,6 +14,13 @@ It is a very simple app, but it serves as a basic unit it's easy to build upon t
 
 GitHub:
 [https://github.com/ahelland/AADGuide-CodeSamples/tree/master/HelloAzureAD](https://github.com/ahelland/AADGuide-CodeSamples/tree/master/HelloAzureAD)
+
+**AboutMe**
+
+This app is a Windows Forms app demonstrating how to use the OAuth Password Grant Flow to acquire a token, and subsequently query the Microsoft Graph. It does not use any libraries to execute the HTTP calls.
+
+GitHub:
+[https://github.com/ahelland/AADGuide-CodeSamples/tree/master/AboutMePasswordGrant](https://github.com/ahelland/AADGuide-CodeSamples/tree/master/AboutMePasswordGrant)
 
 **GraphTreeView**
 
