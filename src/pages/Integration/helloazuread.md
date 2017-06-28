@@ -78,7 +78,7 @@ public sealed partial class MainPage : Page
 
 ClientId is on the application page in the Azure Portal. Tenant is the name of your tenant. You can use either _contoso.onmicrosoft.com_ or _contoso.com_, but I prefer the onmicrosoft format because that remains static while other fqdns can be changed/added/removed.
 
-You will also notice that there are no credentials hard coded into the app. This is because the user is the one acquiring the credentials to call the Graph API, and the resulting token is passed along to the app. The app is not able to authenticate on it's own in a silent manner. This is what is known as "passive authentication". The app caches the token though, so you will only have to authenticate on the first start, and the second time the app seemingly doesn't need the user any longer. (After a while the token will expire, and you will have to re-enter credentials.)
+You will also notice that there are no credentials hard coded into the app. This is because the user is the one acquiring the credentials to call the Graph API, and the resulting token is passed along to the app. The app is not able to authenticate on its own in a silent manner. This is what is known as "passive authentication". The app caches the token though, so you will only have to authenticate on the first start, and the second time the app seemingly doesn't need the user any longer. (After a while the token will expire, and you will have to re-enter credentials.)
 
 The following code will popup a window and do the authentication:
 ```cs
