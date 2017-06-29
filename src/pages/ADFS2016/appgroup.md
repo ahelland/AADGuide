@@ -14,8 +14,6 @@ This is part 1 (of 2) - configuring the ADFS Server.
 Part 2 covers the code.  
 It is assumed that ADFS 2016 is already installed on a server.
 
-**Note: ADFS 2016 is still in beta. The following walkthroughs are based on Technical Preview 4 (Build 10586).**
-
 Open the ADFS Management Console, right-click on "Application Groups", and click "Add Application Group":  
 ![ADFS 2016 - Application Group](_assets/AppGroup_01.PNG)
 

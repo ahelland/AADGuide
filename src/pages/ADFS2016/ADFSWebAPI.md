@@ -12,8 +12,6 @@ This is part 2 (of 2) - writing/editing sample code.
 Part 1 covers the ADFS Server configuration.  
 It is assumed that ADFS 2016 is already installed on a server.
 
-**Note: ADFS 2016 is still in beta. The following walkthroughs are based on Technical Preview 4 (Build 10586).**
-
 ADFS exposes a number of protocols that you can use from a developer's perspective. Whether it be WS-*, SAML, or a number of other acronyms that you have required, you have been able to integrate .Net apps in some way. If you are starting an app from scratch now you are more likely to look into OAuth and OpenId Connect. Azure AD has supported OAuth for a while, and technically ADFS in Windows Server 2012 R2 has some limited support too. There have been some differences in the implementation details however, so there has been a couple of pain points if you want to write an app that requires support for on-prem/cloud/hybrid in one package. Yes, you can make a web app work with both AAD and ADFS by implementing more than one protocol. But for obvious reasons the less protocols the easier.
 
 In the guide for setting up a web app and api for a single AAD tenant the authentication methods were implemented using OAuth and OpenId Connect. This guide will be based on the same code, but using ADFS instead of AAD.  
