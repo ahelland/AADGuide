@@ -16,8 +16,6 @@ Even if you overcome these factors the problem is scaling. Granted, if you only 
 
 Enter Azure AD B2B to assist.
 
-**Note: the service is in preview, and things might change between writing this and the release going GA.**
-
 AAD B2B doesn't remove the concept of federation, but it takes the work away from you. If you use AAD, and an organization you work with also has AAD you both have "stuff" in Azure so wouldn't it make sense that Microsoft handles this for you? Yes, it would, and that is what AAD B2B will leverage.
 
 If you have resources in your AAD tenant you can invite users from other AAD tenants to be linked to your resources. They login with their existing credentials, but gains access to your data through a federation not visible to you.

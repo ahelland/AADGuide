@@ -25,7 +25,7 @@ Since we are creating a web app we need to set the switch for "Web App / Web API
 
 Generate a key and write it down as this will also be needed in the app's configuration.
 
-Note: all the steps for building the app is not shown here. This is due to the service being in preview, and thus the code parts are more fluid than for a released service. To not risk screenshots and steps being outdated detailed instructions have been left out. If you do not want to fork this sample you can create a web app with no authentication and add the following parts:
+Note: all the steps for building the app is not shown here. This is due to the service being in preview when this guide was written, and thus the code parts are more fluid than for a released service. To not risk screenshots and steps being outdated detailed instructions have been left out. If you do not want to fork this sample you can create a web app with no authentication and add the following parts:
 
 Add NuGet packages (latest stable releases):  
 _Microsoft.IdentityModel.Protocol.Extensions_  
